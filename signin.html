@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrar</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+    <nav class="container">
+        <div>
+            <h1>LOGO</h1>
+        </div>
+        <div class="menu" id="links">
+            <a href="index.html">Inicio</a>
+            <a href="about.html">Sobre</a>
+            <a href="signin.html" class="login">Entrar</a>
+            <a href="signup.html" class="signup">Crear Cuenta</a>
+        </div>
+        <div class="icon">
+            <label for="menu" id="menuIcon"><img src="images/menu.svg" alt=""></label>
+            <input type="checkbox" name="" id="menu">
+        </div>
+    </nav> 
+    <main class="formContainer">
+        <div class="form">
+            <div class="textContainer">
+                <div>
+                    <h1>¡Bienvenida de Nuevo!</h1>
+                    <label for="nombre">Nombre:</label><br>
+                    <input type="text" id="nombre" placeholder="Daniela Hernandez"><br>
+
+                    <label for="contraseña">Contraseña:</label><br>
+                    <input type="password" id="contraseña"><br>
+                    <a href="#" onclick="iniciarSesion()" class="boton">Iniciar Sesión</a>
+                    <p>¿No tienes cuenta? <a href="signup.html">Registrate</a></p>
+                </div>
+            </div>
+            <div class="text">
+                <h3>¡Nos alegra verte de nuevo!</h3>
+                <p>Por favor, inicia sesión para continuar desarrollando tu creatividad a través de tus emociones.</p>
+            </div>
+        </div>
+    </main>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
